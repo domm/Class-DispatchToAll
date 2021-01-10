@@ -1,6 +1,6 @@
 package Class::DispatchToAll;
 
-# ABSTRACT: dispatch a method call to all inherited methods
+# ABSTRACT: DEPRECATED - dispatch a method call to all inherited methods
 # VERSION
 
 use 5.006;
