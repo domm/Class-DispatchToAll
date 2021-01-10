@@ -1,10 +1,10 @@
 # NAME
 
-Class::DispatchToAll - dispatch a method call to all inherited methods
+Class::DispatchToAll - DEPRECATED - dispatch a method call to all inherited methods
 
 # VERSION
 
-version 0.12
+version 0.13
 
 # SYNOPSIS
 
