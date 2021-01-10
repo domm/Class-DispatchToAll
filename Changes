@@ -2,6 +2,10 @@
 # Changes for Class::DispatchToAll
 #-----------------------------------------------------------------
 
+{{$NEXT}}
+    - DEPRECATED!
+
+
 0.11    2006-09-30
     - no changes / additions to functionality, this is a purly housekeeping
       release!

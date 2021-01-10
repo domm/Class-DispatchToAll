@@ -1,29 +1,19 @@
-#-----------------------------------------------------------------
-# Class::DispatchToAll
-#-----------------------------------------------------------------
-# Copyright Thomas Klausner 2001, 2002, 2006
-# You may use and distribute this module according to the same terms
-# that Perl is distributed under.
-#
-# Thomas Klausner domm@cpan.org http://domm.plix.at
-#
-#-----------------------------------------------------------------
-# Class::Data::DispatchToAll - dispatch a method call to all inherited methods
-#-----------------------------------------------------------------
 package Class::DispatchToAll;
+
+# ABSTRACT: dispatch a method call to all inherited methods
+# VERSION
 
 use 5.006;
 use strict;
 use warnings;
+
+warn __PACKAGE__ .' is DEPRECATED, please do not use this module anymore';
 
 require Exporter;
 
 our @ISA = qw(Exporter);
 
 our @EXPORT_OK = (qw(dispatch_to_all));
-
-our $VERSION = '0.11';
-
 
 #-----------------------------------------------------------------
 # dispatch_to_all
@@ -74,11 +64,9 @@ sub _dispatcher {
 
 __END__
 
-=head1 NAME
-
-Class::DispatchToAll - Dispatch a method call to all inherited methods
-
 =head1 SYNOPSIS
+
+  DEPRECATED - Do not use this module anymore!
 
   package My::Class;
   our @ISA=qw(SomeClass SomeOtherClass More::Classes);
@@ -96,6 +84,10 @@ Class::DispatchToAll - Dispatch a method call to all inherited methods
 
 
 =head1 DESCRIPTION
+
+DEPRECATED - Do not use this module anymore!
+
+But here are the old docs, anyway:
 
 See the Docs of Damian Conways Module Class::Delegation for a good
 introduction about Dispatching vs. Inheritance.
@@ -248,22 +240,6 @@ depth)
 
 =back
 
-=head2 INSTALLATION
-
-To install this module type the following:
-
-    perl Build.PL
-    ./Build
-    ./Build test
-    sudo ./Build install
-
-=head1 BUGS
-
-Please report any bugs or feature requests to
-C<bug-class-dispatchtoall@rt.cpan.org>, or through the web interface at
-L<http://rt.cpan.org>.  I will be notified, and then you'll automatically
-be notified of progress on your bug as I make changes.
-
 =head1 SEE ALSO
 
 Class::Delegation, NEXT
@@ -271,16 +247,3 @@ Class::Delegation, NEXT
 This thread on perlmonks:
 http://www.perlmonks.org/index.pl?node_id=180852
 
-=head1 AUTHOR
-
-Thomas Klausner, domm@cpan.org, http://domm.plix.at
-
-=head1 COPYRIGHT
-
-Class::DispatchToAll is Copyright (c) 2002,2006 Thomas Klausner.
-All rights reserved.
-
-You may use and distribute this module according to the same terms
-that Perl is distributed under
-
-=cut
